@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Cursos en Línea</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Plataforma de Cursos en Línea</h1>
+    </header>
+
+    <nav>
+        <a href="Inicio.html">Inicio</a> |
+        <a href="Cursos.html">Cursos</a> |
+        <a href="IniciarSesion.html">Iniciar Sesión</a> |
+    </nav>
+
+    <section>
+        <h2>Registro</h2>
+        <form action="procesar_registro.php" method="post">
+            <label for="tipo_usuario">Selecciona tu tipo de usuario:</label>
+            <select name="tipo_usuario" id="tipo_usuario">
+                <option value="alumno">Alumno</option>
+                <option value="maestro">Maestro</option>
+            </select>
+            <br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" required>
+            <br>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" name="correo" required>
+            <br>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" name="contrasena" required>
+            <br>
+            <input type="submit" value="Registrarse">
+        </form>
+    </section>
+
+    <section>
+        <h2>Iniciar Sesión</h2>
+        <form action="procesar_inicio_sesion.php" method="post">
+            <label for="correo_inicio">Correo Electrónico:</label>
+            <input type="email" name="correo_inicio" required>
+            <br>
+            <label for="contrasena_inicio">Contraseña:</label>
+            <input type="password" name="contrasena_inicio" required>
+            <br>
+            <input type="submit" value="Iniciar Sesión">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Plataforma de Cursos en Línea. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

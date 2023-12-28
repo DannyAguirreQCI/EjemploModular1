@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Desarrollo Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .course-details {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .comments-section {
+            margin-top: 20px;
+        }
+
+        .comment {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Plataforma de Cursos en Línea</h1>
+    </header>
+
+    <nav>
+        <a href="Inicio.html">Inicio</a> |
+        <a href="Cursos.html">Cursos</a> |
+        <a href="IniciarSesion.html">Iniciar Sesión</a>
+    </nav>
+
+    <div class="course-details">
+        <h2>Curso de Desarrollo Web</h2>
+        <p>Explora las últimas tecnologías web y construye sitios increíbles.</p>
+        <p><strong>Instructor:</strong> John Doe</p>
+        <p><strong>Duración:</strong> 10 semanas</p>
+        <p><strong>Precio:</strong> $99.99</p>
+
+        <h3>Descripción del Curso</h3>
+        <p>Este curso te enseñará los fundamentos del desarrollo web, incluyendo HTML, CSS, JavaScript y más.</p>
+
+        <h3>Temas Cubiertos</h3>
+        <ul>
+            <li>Introducción a HTML</li>
+            <li>Estilización con CSS</li>
+            <li>Programación en JavaScript</li>
+            <!-- Agregar más temas según sea necesario -->
+        </ul>
+
+        <div class="comments-section">
+            <h3>Comentarios de Estudiantes</h3>
+            <div class="comment">
+                <p><strong>Usuario1:</strong> ¡Este curso fue increíble! Aprendí mucho y ahora puedo crear mi propio sitio web.</p>
+            </div>
+            <div class="comment">
+                <p><strong>Usuario2:</strong> El instructor explicó los conceptos de manera clara. Lo recomiendo.</p>
+            </div>
+            <!-- Agregar más comentarios según sea necesario -->
+
+            <!-- Formulario para agregar un nuevo comentario -->
+            <h3>Agregar Comentario</h3>
+            <form action="procesar_comentario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" required>
+                <br>
+                <label for="comentario">Comentario:</label>
+                <textarea name="comentario" rows="4" required></textarea>
+                <br>
+                <input type="submit" value="Publicar Comentario">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Plataforma de Cursos en Línea. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

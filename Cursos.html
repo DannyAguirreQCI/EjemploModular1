@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar Cursos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .course-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .course-card {
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Plataforma de Cursos en Línea</h1>
+    </header>
+
+    <nav>
+        <a href="Inicio.html">Inicio</a> |
+        <a href="Cursos.html">Cursos</a> |
+        <a href="IniciarSesion.html">Iniciar Sesión</a>
+    </nav>
+
+    <section>
+        <h2>Explorar Todos los Cursos</h2>
+
+        <div class="course-list">
+            <div class="course-card">
+                <h3>Curso de Desarrollo Web</h3>
+                <p>Explora las últimas tecnologías web y construye sitios increíbles.</p>
+                <!--a href="curso.php?id=1">Ver Detalles</a-->
+                <a href="ExplorarCurso.html">Ver Detalles</a>
+            </div>
+            <div class="course-card">
+                <h3>Curso de Marketing Digital</h3>
+                <p>Aprende estrategias efectivas para promocionar productos y servicios en línea.</p>
+                <a href="curso.php?id=2">Ver Detalles</a>
+            </div>
+            <!-- Agregar más cursos según sea necesario -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Plataforma de Cursos en Línea. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

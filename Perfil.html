@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .course-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Plataforma de Cursos en Línea</h1>
+    </header>
+
+    <nav>
+        <a href="Inicio.html">Inicio</a> |
+        <a href="Cursos.html">Cursos</a> |
+        <a href="Perfil.html">Perfil</a> <!-- Página de perfil común a alumnos y maestros -->
+    </nav>
+
+    <section>
+        <h2>Mi Perfil</h2>
+
+        <!-- Contenido común para Alumnos y Maestros -->
+        <p><strong>Nombre:</strong> Nombre del Usuario</p>
+        <p><strong>Correo Electrónico:</strong> correo@ejemplo.com</p>
+
+        <!-- Contenido específico para Alumnos -->
+        <!--?php if ($tipo_usuario == 'alumno') : ?-->
+            <p><strong>Cursos Inscritos:(ALUMNO)</strong></p>
+            <ul>
+                <li>Curso de Desarrollo Web</li>
+                <li>Curso de Marketing Digital</li>
+                <!-- Lista de cursos en los que está inscrito el alumno -->
+            </ul>
+            <!-- Otros detalles específicos para alumnos -->
+        <!--?php endif; ?-->
+
+        <!-- Contenido específico para Maestros -->
+        <!--?php if ($tipo_usuario == 'maestro') : ?-->
+            <p><strong>Cursos que Enseño:(MAESTRO)</strong></p>
+            <ul>
+                <li>Curso de Programación Avanzada</li>
+                <li>Curso de Diseño de Interfaces de Usuario</li>
+                <!-- Lista de cursos que el maestro enseña -->
+            </ul>
+            <!-- Otros detalles específicos para maestros -->
+        <!--?php endif; ?-->
+        <a href="ConfigurarPerfil.html">Gestiona tu perfil</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Plataforma de Cursos en Línea. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
