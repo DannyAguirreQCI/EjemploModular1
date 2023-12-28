@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Cursos en Línea</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Plataforma de Cursos en Línea</h1>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a> |
+        <a href="#">Cursos</a> |
+        <a href="#">Perfil</a> <!-- Página de perfil común a alumnos y maestros -->
+    </nav>
+
+    <section>
+        <h2>Bienvenido a Nuestra Plataforma</h2>
+        <p>Descubre una amplia variedad de cursos en línea para expandir tus conocimientos y habilidades.</p>
+        
+        <!-- Contenido específico para Alumnos -->
+        <!--?php if ($tipo_usuario == 'alumno') : ?-->
+            <h3>Cursos Recomendados para Alumnos</h3>
+            <p>Explora cursos que te ayudarán a alcanzar tus metas académicas.</p>
+            <!-- Muestra aquí cursos recomendados para alumnos -->
+        <!--?php endif; ?-->
+
+        <!-- Contenido específico para Maestros -->
+        <!--?php if ($tipo_usuario == 'maestro') : ?-->
+            <h3>Tus Cursos como Maestro</h3>
+            <p>Gestiona y actualiza los cursos que estás enseñando.</p>
+            <!-- Muestra aquí cursos gestionados por el maestro -->
+        <!--?php endif; ?-->
+    </section>
+
+    <section>
+        <h2>Cursos Populares</h2>
+        <!-- Contenido de cursos populares -->
+    </section>
+
+    <section>
+        <h2>Cursos Destacados</h2>
+        <!-- Contenido de cursos destacados -->
+    </section>
+
+    <section>
+        <h2>Explora Todos los Cursos</h2>
+        <!-- Contenido para explorar todos los cursos -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Plataforma de Cursos en Línea. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
